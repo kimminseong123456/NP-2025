@@ -17,3 +17,5 @@ s.setsockopt(IPPROTO_IP, IP_MULTICAST_IF, inet_aton(WSL_IP))
 while True:
     msg = input("Your message: ")
     s.sendto(msg.encode(), (GROUP, PORT))
+
+
